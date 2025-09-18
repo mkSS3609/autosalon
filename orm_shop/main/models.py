@@ -59,8 +59,6 @@ class Car(Model):
     price = IntegerField()
     image = ImageField(upload_to='images/')
 
-
-
 class Sale(Model):
     id = AutoField(primary_key=True)
     client = ForeignKey(Client, on_delete=PROTECT)
